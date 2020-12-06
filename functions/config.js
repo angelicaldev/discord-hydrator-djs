@@ -22,15 +22,7 @@ const check = () => {
     // There is no message set and there is also no embed being sent either
     if (!config.message.plainMessage && !config.message.useEmbeds) return functions.omit.error('You have not specified a message to send and embeds are disabled.', 1);
     // You have not specified any content for the embed to contain
-    if (
-        config.message.useEmbeds &&
-        !config.message.embedTitle &&
-        !config.message.embedDescription &&
-        !config.message.embedFooter &&
-        !config.message.embedImage &&
-        !config.message.embedImage &&
-        !config.message.embedTimestamp
-    )
+    if (config.message.useEmbeds && !config.message.embedTitle && !config.message.embedDescription && !config.message.embedFooter && !config.message.embedImage && !config.message.embedTimestamp)
         return functions.emit.error('You have not specified any content for the embed to send and you have set useEmbeds to true');
 };
 
