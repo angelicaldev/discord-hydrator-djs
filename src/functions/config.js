@@ -1,5 +1,5 @@
-const config = require('../config/config.json');
-const functions = require('./');
+const config = require('../core/config/config.json');
+const functions = require('.');
 
 /**
  * Checks the config.json file to make sure i0t is set up correctly, if anything is incorrectly configured it will throw an error.

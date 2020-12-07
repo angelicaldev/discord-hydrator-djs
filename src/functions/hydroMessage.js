@@ -1,5 +1,5 @@
-const config = require('../config/config.json');
-const functions = require('./');
+const config = require('../core/config/config.json');
+const functions = require('.');
 
 const send = async (channel, role) => {
     // Build the message
