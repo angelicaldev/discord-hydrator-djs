@@ -1,5 +1,5 @@
-let config = require('../config/config.json');
-let { MessageEmbed } = require('discord.js');
+const config = require('../core/config/config.json');
+const { MessageEmbed } = require('discord.js');
 
 const build = () => {
     let embed = new MessageEmbed();

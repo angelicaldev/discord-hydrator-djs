@@ -1,8 +1,8 @@
 {
   "name": "discord-hydrator-djs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A bot that will send a message every x time in a specified channel reminding a user to stay hydrated",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "nodemon index.js --watch .",
     "lint": "eslint --ext .js,.jsx ."

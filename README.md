@@ -15,7 +15,7 @@ In order to set up hydration bot, first of all you must register for a discord b
 ## Setting the bot token
 Once you have done this and you have got hold of your bots token, head on over to the .env.example file and replace `TOKEN_HERE` with your bots token, for example: 
 
-`TOKEN=DfJVMowkNVIAOQKVNZowi.CIWEiwfj`
+`TOKEN = DfJVMowkNVIAOQKVNZowi.CIWEiwfj`
 
 *Note: Never share your bot token with anyone, it's like giving away access to your discord account.* 
 
