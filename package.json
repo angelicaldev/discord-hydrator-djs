@@ -7,7 +7,7 @@
     "start": "nodemon index.js --watch .",
     "lint": "eslint --ext .js,.jsx ."
   },
-  "author": "AngelicalDev",
+  "author": "AngelNull",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^12.5.1",
