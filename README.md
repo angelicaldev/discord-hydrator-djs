@@ -2,6 +2,9 @@
 
 A simple discord bot to remind you & your server members to stay hydrated at regular interverals, couple this with a ping role/reaction opt-in for maximum usage.
 
+## Please Note
+This project is not actively maintained and you may encounter some issues using it
+
 # Contributing 
 
 Contributions should not be excessive or over engineered and should use the linting settings found in this project, it should stick to the relevant theme of the bot and should be seen as a useful feature/update and have been tested locally.
