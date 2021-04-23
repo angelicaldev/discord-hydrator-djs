@@ -5,6 +5,7 @@
 
   <p align="center">
     A simple discord bot to remind you & your server members to stay hydrated at regular interverals
+    <br />
     <a href="https://edb.foxgirls.cc"><strong>Website</strong></a> | 
     <a href="https://edb.foxgirls.cc/docs/"><strong>Documentation</strong></a>
   </p>
