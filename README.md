@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 
-  <h1 align="center">Discord-Hydrator</h1>
+  <h3 align="center">Discord-Hydrator</h3>
 
   <p align="center">
     A simple discord bot to remind you & your server members to stay hydrated at regular interverals
@@ -11,13 +11,13 @@
   </p>
 </p>
 
-# Setting Up
+## Setting Up
 
-## Making a bot application
+### Making a bot application
 
 In order to set up hydration bot, first of all you must register for a discord bot application over on the [discord developer portal](https://discord.com/developers/applications), there are plenty of guides for this online, so I shall spare the details on it
 
-## Setting the bot token
+### Setting the bot token
 Once you have done this and you have got hold of your bots token, head on over to the .env.example file and replace `TOKEN_HERE` with your bots token, for example: 
 
 `TOKEN = DfJVMowkNVIAOQKVNZowi.CIWEiwfj`
@@ -26,11 +26,11 @@ Once you have done this and you have got hold of your bots token, head on over t
 
 After doing this, rename the file from `.env.example` to just `.env`
 
-# Configuration
+## Configuration
 
 To configure the bot, go into the configuration folder and open up `config.json.example`, once again, we will be renaming this to just `config.json` instead so it can be used. 
 
-## Config Example
+### Config Example
 ```json
 {
     "setup": {
@@ -64,4 +64,4 @@ To configure the bot, go into the configuration folder and open up `config.json.
     }
 }
 ```
-##### Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.
+Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.
