@@ -36,7 +36,7 @@ To install only production dependancies, run npm install with the ``--production
 
 Once dependancies have been installed, do `npm run config` and follow the steps to configure the base part of hydrator. 
 
-Once you have done this, go to src/core/config/sample and copy commands.json and message.json into src/core/config and change them to your liking. 
+Once you have done this, go to `src/core/config/sample` and copy commands.json and message.json into `src/core/config` and change them to your liking. 
 
 *Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.*
 
