@@ -1,20 +1,20 @@
 const { Collection } = require('discord.js');
-const { ratelimitCooldown: rCooldowns, cooldowns, config: cfg } = require('../core/client.js');
-//const functions = require('./functions');
+require('dotenv').config();
+const { ratelimitCooldown: rCooldowns, cooldowns } = require('../core/client.js');
 
 module.exports = async (client, message) => {
     /* If the author is a bot, if the message is sent in DM, the bot is set to ignore commands, or the guild is not the one specified in the configuration */
-    if (message.author.bot || !message.guild || cfg.setup.guildID != message.guild.id || !cfg.commandConfig.allowCommands) return;
+    if (message.author.bot || !message.guild || process.env.guildID != message.guild.id || !process.env.allowCommands) return;
     /* The bot is set to admin only commands mode, and the user does not have the configured role */
-    if (cfg.commandConfig.adminOnlyCmds && !message.member.roles.cache.has(cfg.setup.adminRoleID)) return;
+    if (process.env.adminOnlyCmds == 'true' && !message.member.roles.cache.has(process.env.adminRoleID)) return;
 
     /* This is where we define arguments, command name and find the command to execute, if no command is found; return */
-    const args = message.content.slice(cfg.commandConfig.prefix.length).split(/ +/);
+    const args = message.content.slice(process.env.prefix.length).split(/ +/);
     const commandName = args.shift().toLowerCase();
     const command = client.commands.get(commandName) || client.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
     if (!command) return;
 
-    if (message.content.startsWith(cfg.commandConfig.prefix)) {
+    if (message.content.startsWith(process.env.prefix)) {
         /* This is where we check if the message starts with the prefix defined in ./core/config.json, if not; return */
         /* Easy Ratelimit Cooldown */
         if (rCooldowns.has(message.author.id)) return;
@@ -27,7 +27,7 @@ module.exports = async (client, message) => {
     /* If the command requires args and the user does not pass them; tell the user the correct usage of the command and return */
     if (command.args && !args.length) {
         /* Send the error message; delete the authors message and error message after elapsed time */
-        let errmsg = await message.channel.send(`\`Incorrect usage! The correct usage is: \n \`${cfg.prefix}${commandName} ${command.usage}\``);
+        let errmsg = await message.channel.send(`\`Incorrect usage! The correct usage is: \n \`${process.env.prefix}${commandName} ${command.usage}\``);
         message.delete({ timeout: 6000 });
         return errmsg.delete({ timeout: 8000 });
     }

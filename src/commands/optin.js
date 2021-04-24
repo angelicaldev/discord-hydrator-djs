@@ -1,4 +1,5 @@
-const config = require('../core/config/config.json');
+require('dotenv').config();
+const cmds = require('../core/config/commands.json');
 const functions = require('../functions');
 module.exports = {
     name: 'optin',
@@ -8,10 +9,10 @@ module.exports = {
     usage: '',
     cooldown: 3,
     execute: async (message) => {
-        if (config.enabledCommands.optin) {
+        if (cmds.enabledCommands.optin) {
             let errorOccured = false;
             // Find the configured ping role
-            let role = (await message.guild.roles.cache.find((role) => role.id === config.setup.roleID)) || functions.omitError(`The specified role does not appear to exist.`, 1);
+            let role = (await message.guild.roles.cache.find((role) => role.id === process.env.roleID)) || functions.emit.error(`The specified role does not appear to exist.`, 1);
             // Check if the member has the role
             if (message.member.roles.cache.has(role.id)) return message.channel.send(`${message.author}! You already have the role.`);
             // Give the member the role

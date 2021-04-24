@@ -1,0 +1,7 @@
+{
+    "enabledCommands": {
+        "ping": true,
+        "optin": true,
+        "optout": true
+    }
+}
