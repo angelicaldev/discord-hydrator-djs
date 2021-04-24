@@ -1,8 +1,8 @@
 ---
-name: Enhancement Request
-about: Suggest a change for the project.
-title: 'ENHANCE: '
-labels: enhancement
+name: 🚀 Enhancement Request
+about: Suggest a change or new feature for the project.
+title: 'Enhancement: '
+labels: 'type: enhancement'
 ---
 ## Summary
 Brief explanation of the enhancement.

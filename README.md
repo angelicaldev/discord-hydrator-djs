@@ -1,67 +1,44 @@
 <br />
 <p align="center">
-
-  <h3 align="center">Discord-Hydrator</h3>
-
+<img src='assets/img/header.png' width="20%" height="20%">
+  <h3 align="center">Hydrator</h3>
   <p align="center">
-    A simple discord bot to remind you & your server members to stay hydrated at regular interverals
+    A simple discord bot to remind your server members to stay hydrated
     <br />
-    <a href="https://edb.foxgirls.cc"><strong>Website</strong></a> | 
-    <a href="https://edb.foxgirls.cc/docs/"><strong>Documentation</strong></a>
+    <a href="https://github.com/AngelNull/discord-hydrator-djs/archive/refs/heads/main.zip"><strong>Download</strong></a>
   </p>
 </p>
 
+# 
+
+## Purpose
+This bot was made to easily remind server members to stay hydrated at regular intervals using a role to ping them with a specified message.
+
 ## Setting Up
+
+Hydrator requires [NodeJS](https://nodejs.org/) 14.x or higher in order to function properly.
 
 ### Making a bot application
 
-In order to set up hydration bot, first of all you must register for a discord bot application over on the [discord developer portal](https://discord.com/developers/applications), there are plenty of guides for this online, so I shall spare the details on it
+In order to set up hydrator, first of all you must register for a discord bot application over on the [discord developer portal](https://discord.com/developers/applications), there are plenty of guides for this online, so I shall spare the details on it
 
-### Setting the bot token
-Once you have done this and you have got hold of your bots token, head on over to the .env.example file and replace `TOKEN_HERE` with your bots token, for example: 
+### Downloading
 
-`TOKEN = DfJVMowkNVIAOQKVNZowi.CIWEiwfj`
+Clone the repository or [download the code](https://github.com/AngelNull/discord-hydrator-djs/archive/refs/heads/main.zip) from GitHub directly.
 
-*Note: Never share your bot token with anyone, it's like giving away access to your discord account.* 
-
-After doing this, rename the file from `.env.example` to just `.env`
-
-## Configuration
-
-To configure the bot, go into the configuration folder and open up `config.json.example`, once again, we will be renaming this to just `config.json` instead so it can be used. 
-
-### Config Example
-```json
-{
-    "setup": {
-        "guildID": "GUILD_ID",
-        "channelID": "CHANNEL_ID",
-        "roleID": "ROLE_ID",
-        "adminRoleID": "ADMIN_ROLE_ID",
-        "enableDebugLogs": false
-    },
-    "message": {
-        "plainMessage": "Hey you, drink water now!",
-        "useEmbeds": false,
-        "embedTimestamp": false,
-        "embedTitle": "EMBED_TITLE",
-        "embedDescription": "EMBED_DESCRIPTION",
-        "embedFooter": "EMBED_FOOTER",
-        "embedThumbnail": "EMBED_THUMBNAIL_DIRECT_URL",
-        "embedImage": "EMBED_IMAGE_DIRECT_URL",
-        "embedColour": "EMBED_COLOUR",
-        "intervalInSeconds": 3600
-    },
-    "commandConfig": {
-        "prefix": "!",
-        "allowCommands": true,
-        "adminOnlyCmds": false
-    },
-    "enabledCommands": {
-        "ping": true,
-        "optin": true,
-        "optout": true
-    }
-}
+### Install Dependancies
+```bash
+npm install
 ```
-Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.
+To install only production dependancies, run npm install with the ``--production`` flag.
+
+### Configuration
+
+Once dependancies have been installed, do `npm run config` and follow the steps to configure the base part of hydrator. 
+
+Once you have done this, go to `src/core/config/sample` and copy commands.json and message.json into `src/core/config` and change them to your liking. 
+
+*Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.*
+
+## Contributing
+All contributions are welcomed and encouraged, please ensure you lint your code using the included configurations otherwise it will fail the linting workflow when making a pull-request.

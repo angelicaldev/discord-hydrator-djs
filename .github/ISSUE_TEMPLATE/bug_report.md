@@ -1,8 +1,8 @@
 ---
-name: Bug Report
+name: 🐛 Bug Report
 about: Create a report to help the project improve.
-title: 'BUG: '
-labels: bug
+title: 'Bug: '
+labels: 'type: bug'
 ---
 ### Describe the Bug
 A clear and concise description of what the bug is.

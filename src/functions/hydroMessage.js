@@ -1,4 +1,4 @@
-const config = require('../core/config/config.json');
+const message = require('../core/config/message.json');
 const functions = require('.');
 
 const send = async (channel, role) => {
@@ -7,17 +7,17 @@ const send = async (channel, role) => {
         console.warn(error);
     });
 
-    if (config.message.useEmbeds) {
+    if (message.useEmbeds) {
         let embed = functions.embed.build();
 
-        channel.send(`${role} ${config.message.plainMessage}`, embed).catch(async (error) => {
+        channel.send(`${role} ${message.plainMessage}`, embed).catch(async (error) => {
             await role.setMentionable(false, `Making the role unmentionable as the hydration reminder has been sent. Timestamp: ${new Date()}`).catch(() => {
                 return;
             });
             return console.error(error);
         });
     } else {
-        channel.send(`${role} ${config.message.plainMessage}`).catch(async (error) => {
+        channel.send(`${role} ${message.plainMessage}`).catch(async (error) => {
             await role.setMentionable(false, `Making the role unmentionable as the hydration reminder has been sent. Timestamp: ${new Date()}`).catch(() => {
                 return;
             });

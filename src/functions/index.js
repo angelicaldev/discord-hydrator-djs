@@ -1,4 +1,4 @@
 exports.embed = require('./embed');
 exports.configuration = require('./config');
-exports.omit = require('./omit');
+exports.emit = require('./emit');
 exports.hydroMessage = require('./hydroMessage');
