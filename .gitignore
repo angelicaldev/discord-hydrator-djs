@@ -1,3 +1,4 @@
 node_modules
-src/core/config/config.json
 .env
+src/core/config/message.json
+src/core/config/commands.json
