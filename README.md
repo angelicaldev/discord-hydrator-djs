@@ -5,7 +5,7 @@
   <p align="center">
     A simple discord bot to remind your server members to stay hydrated
     <br />
-    <a href="https://github.com/AngelNull/discord-hydrator-djs/archive/refs/heads/main.zip"><strong>Download</strong></a>
+    <a href="https://github.com/AngelNull/hydrator/archive/refs/heads/main.zip"><strong>Download</strong></a>
   </p>
 </p>
 
@@ -24,7 +24,7 @@ In order to set up hydrator, first of all you must register for a discord bot ap
 
 ### Downloading
 
-Clone the repository or [download the code](https://github.com/AngelNull/discord-hydrator-djs/archive/refs/heads/main.zip) from GitHub directly.
+Clone the repository or [download the code](https://github.com/AngelNull/hydrator/archive/refs/heads/main.zip) from GitHub directly.
 
 ### Install Dependancies
 ```bash
