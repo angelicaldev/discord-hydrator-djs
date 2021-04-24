@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon index.js --watch .",
+    "config": "node src/scripts/setup.js",
     "lint": "eslint --ext .js,.jsx ."
   },
   "author": "AngelNull",
