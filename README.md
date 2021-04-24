@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-<img src='assets/img/header.png' width="50%" height="50%">
+<img src='assets/img/header.png' width="20%" height="20%">
   <h3 align="center">Hydrator</h3>
   <p align="center">
     A simple discord bot to remind your server members to stay hydrated
