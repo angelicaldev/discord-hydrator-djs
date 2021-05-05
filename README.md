@@ -68,7 +68,7 @@ In order to set up hydrator, first of all you must register for a discord bot ap
 
 ## Downloading
 
-Clone the repository with `git clone https://github.com/AngelNull/Hydrator.git" or download the latest full release from [here](https://github.com/AngelNull/Hydrator/releases)
+Clone the repository with `git clone https://github.com/AngelNull/Hydrator.git` or download the latest full release from [here](https://github.com/AngelNull/Hydrator/releases)
 
 ## Install Dependancies
 ```bash
