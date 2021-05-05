@@ -11,10 +11,10 @@
 
 # 
 
-## Purpose
+# Purpose
 This bot was made to easily remind server members to stay hydrated at regular intervals using a role to ping them with a specified message.
 
-## Setting Up
+# Setting Up
 
 Hydrator requires [NodeJS](https://nodejs.org/) 14.x or higher in order to function properly.
 
@@ -40,5 +40,8 @@ Once you have done this, go to `src/core/config/sample` and copy commands.json a
 
 *Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.*
 
-## Contributing
+# Contributing
 All contributions are welcomed and encouraged, please ensure you lint your code using the included configurations otherwise it will fail the linting workflow when making a pull-request.
+
+## Versioning
+Learn more about versioning [here.](./.github/VERSIONING.MD)
