@@ -26,12 +26,18 @@ jobs:
       run: npm run lint
 
   Pre-Release:
+    needs: ESLint
     runs-on: ubuntu-latest
 
     steps: 
       # Checkout Repo
     - name: Checkout Repository 
       uses: actions/checkout@v2
+
+      # Fetch the package.json version
+    - name: Get Package Version
+      id: package-version
+      uses: tyankatsu0105/read-package-version-actions@v1
       
       # Push to the pre-release tag with the latest commit w/ a built artifact
     - name: Update Pre-Release
