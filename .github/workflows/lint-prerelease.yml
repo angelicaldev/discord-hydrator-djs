@@ -26,7 +26,6 @@ jobs:
       run: npm run lint
 
   Pre-Release:
-    needs: Make
     runs-on: ubuntu-latest
 
     steps: 
