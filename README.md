@@ -85,10 +85,10 @@ Once you have done this, go to `src/core/config/sample` and copy commands.json a
 *Note: Thumbnail and Image links must be direct links to the images and be resolvable by discord, an error will be thrown if they are not.*
 
 # Contributing
-All contributions are welcomed and encouraged, please ensure you lint your code using the included configurations otherwise it will fail the linting workflow when making a pull-request.
+All contributions are welcomed and encouraged, please ensure you lint your code using the included configurations otherwise it will fail the linting workflow when making a pull-request. Please also keep all commits you make to the [commit convention](./.github/COMMIT_CONVENTION.md) so that changelogs can be created from them. 
 
 ## Versioning
-Learn more about versioning [here.](./.github/VERSIONING.MD)
+Learn more about versioning and the release CI [here.](./.github/VERSIONING.MD)
 
 # License
 📜 Hydrator is licensed under the [**MIT** license](./LICENSE) (c) 2021 AngelNull.
