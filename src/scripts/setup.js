@@ -16,7 +16,7 @@ console.log('-----------------------------------\n          Bot Configuration\n-
 const questions = [
     // The bots token
     {
-        type: 'text',
+        type: 'password',
         name: 'token',
         message: 'Bot Token?',
         initial: process.env.TOKEN || 'https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot',
