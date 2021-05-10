@@ -10,7 +10,7 @@
   <p align="center">
     Remind your members to stay hydrated
     <br />
-    <a href="https://github.com/AngelNull/YouDownloader/releases"><strong>Download »</strong></a>
+    <a href="https://github.com/AngelNull/Hydrator/releases"><strong>Download »</strong></a>
     <br />
     <br />
     <a href="#contributing">Contributing</a>
