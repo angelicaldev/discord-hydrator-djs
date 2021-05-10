@@ -1,7 +1,7 @@
 <!--PROJECT HEAD-->
 <br />
 <p align="center">
-  <a href="https://github.com/raine-discord/website">
+  <a>
     <img src='assets/img/header.png' width="20%" height="20%">
   </a>
 
