@@ -55,6 +55,12 @@
   </ol>
 </details>
 
+--- 
+### Archival Notice         
+
+#### This project will be archived after being updated to Discord.js v13 and will no longer be updated or worked on past that point. No big changes will be made to the project until then and is considered practically shelved. 
+---
+
 # Purpose
 This bot was made to easily remind server members to stay hydrated at regular intervals using a role to ping them with a specified message.
 
